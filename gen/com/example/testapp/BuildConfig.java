@@ -1,4 +1,5 @@
-/** Automatically generated file. DO NOT MODIFY */
+/*___Generated_by_IDEA___*/
+
 package com.example.testapp;
 
 /* This stub is only used by the IDE. It is NOT the BuildConfig class actually packed into the APK */
