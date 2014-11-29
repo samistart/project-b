@@ -6,16 +6,13 @@ import android.os.Build;
 
 public class GyroSensor {
 	
-	public static void main(){
-		//onSensorChanged(null);
-		System.out.println("hello");
-	}
+
 
 	private static final float NS2S = 1.0f / 1000000000.0f;
 	private final float[] deltaRotationVector = new float[4];
 	private float timestamp;
 
-	@TargetApi(Build.VERSION_CODES.GINGERBREAD) public void onSensorChanged(SensorEvent event) {
+	@TargetApi(Build.VERSION_CODES.GINGERBREAD) public float[] onSensorChanged(SensorEvent event) {
 	  // This timestep's delta rotation to be multiplied by the current rotation
 	  // after computing it from the gyro sample data.
 	  if (timestamp != 0) {
@@ -55,6 +52,7 @@ public class GyroSensor {
 	    // User code should concatenate the delta rotation we computed with the current rotation
 	    // in order to get the updated rotation.
 	    // rotationCurrent = rotationCurrent * deltaRotationMatrix;
+        return deltaRotationMatrix;
 	   }
 	}
 
