@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/grid"
+    android:divider="2"
+    android:focusable="false"
+    android:clickable="false"
+    android:visibility="visible"
+    android:alignmentMode="alignBounds"
+    android:columnOrderPreserved="false"
+    android:useDefaultMargins="true">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/up"
+        android:layout_above="@+id/upbtn"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Up button"
+        android:minHeight="10dp"
+        android:maxHeight="20dp"
+        android:maxWidth="20dp"
+        android:minWidth="10dp"
+        android:onClick="@string/abc_toolbar_collapse_description" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/up"
+        android:layout_le="true"
+        android:contentDescription="Left button"
+        android:minHeight="10dp"
+        android:maxHeight="20dp"
+        android:maxWidth="20dp"
+        android:minWidth="10dp"
+        android:onClick="@string/abc_toolbar_collapse_description"
+        android:layout_marginRight="95dp"
+        android:layout_centerVertical="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/up" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:maxHeight="20dp"
+        android:maxWidth="20dp"
+        android:minHeight="20dp"
+        android:minWidth="10dp"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignLeft="@+id/up" />
+
+</RelativeLayout>
